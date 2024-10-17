@@ -28,6 +28,8 @@ export default function Mobileview() {
         height: "69px",
         backgroundColor: "#0C084C",
         borderRadius: "40px",
+        position: "fixed",
+        bottom: "0",
     }}>
       <ListItem sx={{
         

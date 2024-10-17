@@ -21,15 +21,18 @@ const Lapview = () => {
   ];
 
   const IconBox = {
-    width: "35px",
-    height: "35px",
+    width: "40px",
+    height: "40px",
     borderRadius: "12px",
     backgroundColor: "#FFFFFF29",
     color: "#F2F4F6",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "-5px",
+    cursor: "pointer",
+    '&:hover': {
+      backgroundColor: "#00B7A8",
+    },
   };
 
   const icons = {
@@ -56,10 +59,23 @@ const Lapview = () => {
             },
           }}
         >
-          <List>
-            <img src={logo} alt="Logo" style={{ width: '40px', height: 'auto', background: "#0C084C", marginLeft: "11px" }} />
+          <List sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+          }}>
+          <Box
+            component="img"
+            src={logo}
+            alt="Logo"
+            sx={{
+              width: '50px',
+              height: 'auto',
+              backgroundColor: "#0C084C",
+            }}
+          />
           </List>
-          <List sx={{ marginTop: '20%' }}>
+          <List sx={{ marginTop: '30px' }}>
             {Items.map((item) => (
               <ListItem
                 key={item.id}
@@ -77,7 +93,7 @@ const Lapview = () => {
                   sx={{
                     color: "white",
                     "& .MuiTypography-root": {
-                      fontSize: "10px",
+                      fontSize: "12px",
                     },
                   }}
                 />
@@ -88,7 +104,7 @@ const Lapview = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "30%"
+            marginTop: "50px"
           }}>
             <ListItem sx={IconBox}>
               <SettingsIcon />
@@ -96,7 +112,7 @@ const Lapview = () => {
             <ListItemText sx={{
               color: "#F2F4F6",
               "& .MuiTypography-root": {
-                fontSize: "10px",
+                fontSize: "12px",
               },
             }}>Settings</ListItemText>
           </List>
