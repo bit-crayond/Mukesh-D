@@ -149,9 +149,8 @@ export default function TopBar() {
                 disablePadding: true,
               }}
             >
-              <MenuItem onClick={handleDropdownClose}>Option 1</MenuItem>
-              <MenuItem onClick={handleDropdownClose}>Option 2</MenuItem>
-              <MenuItem onClick={handleDropdownClose}>Option 3</MenuItem>
+              <MenuItem onClick={handleDropdownClose}>Action</MenuItem>
+              <MenuItem onClick={handleDropdownClose}>Goal</MenuItem>
             </Menu>
 
             {/* Gift Icon */}
