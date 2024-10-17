@@ -16,7 +16,7 @@ const styles = {
         border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
-        margin : '20px'
+        margin : '20px 70px'
         
         
     },
@@ -101,7 +101,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '11px'
+        marginLeft : '15px'
         
     },
     
@@ -204,7 +204,7 @@ const styles = {
 
         color :'red',
         position :'absolute',
-        left : '19.5%',
+        left : '25%',
         top:'32%',
         fontSize : 'small'
 
