@@ -201,7 +201,7 @@ const styles = {
     dot :
     {
 
-        color :'red',
+        color :'blue',
         position :'absolute',
         left : '25%',
         top:'32%',
