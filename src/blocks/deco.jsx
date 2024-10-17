@@ -16,7 +16,8 @@ const styles = {
         border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
-        margin : '20px'
+        marginTop : '150px',
+        marginLeft : '120px'
         
         
     },
@@ -101,7 +102,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '15px'
+        marginLeft : '11px'
         
     },
     
@@ -166,7 +167,8 @@ const styles = {
         borderRadius : '5px',
         border : 'none',
         padding : '66px 20px',
-        fontSize : '13px',      
+        fontSize : '13px',
+        padding : '10px',
         marginLeft : '4.3px'
         
     },
@@ -201,10 +203,10 @@ const styles = {
     dot :
     {
 
-        color :'blue',
+        color :'red',
         position :'absolute',
-        left : '25%',
-        top:'32%',
+        left : '26.5%',
+        top:'50%',
         fontSize : 'small'
 
     },
