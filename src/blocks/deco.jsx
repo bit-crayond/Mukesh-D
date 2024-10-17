@@ -16,7 +16,8 @@ const styles = {
         border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
-        margin : '20px'
+        marginTop : '150px',
+        marginLeft : '120px'
         
         
     },
@@ -204,8 +205,8 @@ const styles = {
 
         color :'red',
         position :'absolute',
-        left : '19.5%',
-        top:'32%',
+        left : '26.5%',
+        top:'50%',
         fontSize : 'small'
 
     },
