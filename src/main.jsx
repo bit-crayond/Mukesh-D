@@ -6,7 +6,7 @@ import { Grid } from '@mui/material'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Grid container>
-      <Grid item lg={4.35}>
+      <Grid item lg={4.4}>
       <Block/>
       </Grid>
     </Grid>
