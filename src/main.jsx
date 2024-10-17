@@ -1,7 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
-import Lapview from './navbar/lapview'
 import { Grid } from '@mui/material'
 import Block from './blocks/block'
 
