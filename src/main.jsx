@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Block from './mukesh/block'
+import Block from './block/block'
 import { Grid } from '@mui/material'
 
 createRoot(document.getElementById('root')).render(
