@@ -16,7 +16,7 @@ const styles = {
         border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
-        margin : '20px 70px'
+        margin : '20px'
         
         
     },
