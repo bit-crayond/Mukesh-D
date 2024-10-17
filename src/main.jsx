@@ -5,10 +5,6 @@ import { Grid } from '@mui/material'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Grid container>
-      <Grid item lg={3.6}>
-      <Block/>
-      </Grid>
-    </Grid>
+      
   </StrictMode>
 )
