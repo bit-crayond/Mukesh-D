@@ -5,7 +5,7 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import SettingsIcon from '@mui/icons-material/Settings';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import TrackChangesIcon from "@mui/icons-material/TrackChanges";
-import logo from '../assets/logo.png';
+import logo from './images/logo.png';
 import Mobileview from './Mobileview'; 
 
 const Lapview = () => {
@@ -57,7 +57,7 @@ const Lapview = () => {
           }}
         >
           <List>
-            <img src={logo} alt="Logo" style={{ width: '40px', height: 'auto', background: "#0C084C" }} />
+            <img src={logo} alt="Logo" style={{ width: '40px', height: 'auto', background: "#0C084C", marginLeft: "11px" }} />
           </List>
           <List sx={{ marginTop: '20%' }}>
             {Items.map((item) => (
