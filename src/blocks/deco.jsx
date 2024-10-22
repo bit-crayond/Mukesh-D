@@ -166,7 +166,6 @@ const styles = {
         bcackgroundColor : '#C6C6C63D',
         borderRadius : '5px',
         border : 'none',
-        padding : '66px 20px',
         fontSize : '13px',
         padding : '10px',
         marginLeft : '4.3px'
