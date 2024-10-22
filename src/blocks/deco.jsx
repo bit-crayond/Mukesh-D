@@ -1,22 +1,20 @@
-import { Title } from "@mui/icons-material"
-import { borderRadius, display, fontSize, height, margin, padding, width } from "@mui/system"
-
+import { Height } from "@mui/icons-material"
 
 const styles = {
 
     body: 
     {
-        fontFamily: "'Poppins', sans-serif"
+        fontFamily: "Poppins, sans-serif",
+        position:'relative'
     },
     
     cards: 
     {
         padding: "12px ",
         borderRadius: "12px",
-        border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
-        marginTop : '150px',
+        marginTop : '50px',
         marginLeft : '120px'
         
         
@@ -85,15 +83,15 @@ const styles = {
     {
         
         color : '#535353',
-        fontSize : '13px',
-        marginTop : '20px',
+        fontSize : '15px',
+        marginTop : '20px'
         
     },
     
     redflag :
     {
         
-        padding : '1px',
+        padding : '5px',
         marginTop : '10px',
         marginBottom : '15px',
         color : '#E74C3C',
@@ -116,9 +114,9 @@ const styles = {
         padding : '5px',
         marginTop  : '10px',
         marginBottom : '17px',
-        marginLeft : '15px',
         textAlign : 'center',
         border : '2px solid #E74C3C90', 
+        marginLeft : '11px'
         
     },
     
@@ -127,7 +125,7 @@ const styles = {
         
         color : '#8D8D8D',
         marginTop : '13px',
-        marginLeft : '45px'
+        marginLeft : '33px'
         
     },
     
@@ -137,7 +135,7 @@ const styles = {
         
         color : '#F39C12',
         marginTop : '13px',
-        marginLeft : '4px'
+        marginLeft : '5px'
         
     },
     
@@ -146,7 +144,7 @@ const styles = {
         
         color : '#8D8D8D',
         marginTop : '14px',
-        marginLeft : '4px'
+        marginLeft : '5px'
         
     },
     
@@ -166,6 +164,7 @@ const styles = {
         bcackgroundColor : '#C6C6C63D',
         borderRadius : '5px',
         border : 'none',
+        padding : '66px 20px',
         fontSize : '13px',
         padding : '10px',
         marginLeft : '4.3px'
@@ -175,11 +174,9 @@ const styles = {
     icons1:
     {
         
-        color : '#8D8D8D',
-        display : 'flex',
-        alignItems : 'center',
-        justifyContent : 'center',
-        padding : '3px'
+        marginTop : '23px',
+        marginLeft : '10px',
+        color : '#8D8D8D'
         
     },
 
@@ -195,20 +192,23 @@ const styles = {
         alignItems : 'center',
         justifyContent : 'center',
         border : '2px solid #E4EAEE',
-        borderRadius: '9px'
+        borderRadius: '9px',
+        '& .MuiBadge-dot' : {
+            padding : '6px',
+        }
         
     },
     
-    dot :
-    {
+    // dot :
+    // {
 
-        color :'red',
-        position :'absolute',
-        left : '26.5%',
-        top:'50%',
-        fontSize : 'small'
+    //     color :'red',
+    //     position :'absolute',
+    //     left : '26.5%',
+    //     top:'45%',
+    //     fontSize : 'small'
 
-    },
+    // },
         
     icons3:
     {
@@ -234,7 +234,7 @@ const styles = {
 
     footer1:
     {
-        marginTop : '15px'
+        marginTop : '10px'
 
     },
 
@@ -254,20 +254,20 @@ const styles = {
     footer3:
     {
         width : '2%',
-        marginLeft : '18%', 
-        marginTop : '18px',
-
+        marginLeft : '60px', 
+        marginTop : '20px',
+        
     },
     
     footer4:
     {
-    
+        
         padding : '5px',
         color : '#00B7A8',
         border : '2px dotted #00B7A8',
         borderRadius : '100%',
-        marginLeft : '65px',
         marginTop : '10px',
+        marginLeft : '65px', 
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
