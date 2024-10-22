@@ -196,7 +196,10 @@ const styles = {
         alignItems : 'center',
         justifyContent : 'center',
         border : '2px solid #E4EAEE',
-        borderRadius: '9px'
+        borderRadius: '9px',
+        '& .MuiBadge-dot' : {
+            padding : '6px',
+        }
         
     },
     

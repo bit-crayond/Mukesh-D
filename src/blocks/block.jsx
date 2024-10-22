@@ -1,5 +1,5 @@
 import styles from './deco';
-import{ErrorIcon,Box,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon} from './import'
+import{ErrorIcon,Box,Badge,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon} from './import'
 import profiles from './images/profiles.png'
 import target from './images/target.png'
 import clipboard from './images/clipboard.png'
@@ -44,8 +44,7 @@ export default function Block()
                 <Box sx={styles.icons1} title='Tasks(2)'><img src={clipboard}/></Box>   
                 <Box sx={styles.icons1} title='Workflow'><img src={flow}/></Box>
                 <Box sx={styles.icons1}><img src={percentage}/></Box>
-                <Box sx={styles.icons2}><Personicon/><b style={{color : 'black',marginLeft:'2px'}}>4</b></Box>
-                <Box sx={styles.dot}><Doticon/></Box>
+                <Badge variant='dot' color='error' sx={styles.icons2}><Personicon/><b style={{color : 'black',marginLeft:'2px'}}>4</b></Badge>    
                 <Box sx={styles.icons3}><b>Pending</b><Downicon/></Box>
             </Box>
 
