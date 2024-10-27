@@ -194,7 +194,7 @@ const styles = {
     icons2:
     {
         
-        paddingRight : '17px',
+        paddingRight : '13px',
         color : '#8D8D8D',
         marginTop : '15px',
         marginBottom : '15px',
@@ -205,7 +205,8 @@ const styles = {
         border : '2px solid #E4EAEE',
         borderRadius: '9px',
         '& .MuiBadge-dot' : {
-            padding : '4px',
+            padding : '6px',
+            borderRadius : '100%'
         }
         
     },
