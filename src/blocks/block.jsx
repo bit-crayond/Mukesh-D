@@ -1,12 +1,15 @@
 import styles from './deco';
-import{ErrorIcon,Box,Card,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon} from './import'
+import{ErrorIcon,Box,Badge,Card,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon, CircularProgress,Typography} from './import'
 import flagicon from './images/flagicon.png'
 import avatar1 from './images/avatar1.jpg'
 import avatar2 from './images/avatar2.jpeg'
 import avatar3 from './images/avatar3.jpeg'
+import { FormControl, Grid, InputLabel, NativeSelect } from '@mui/material';
 
 export default function Block()
 {
+
+    const features = ['5157-Feature' , 'Goal' , '#Colabo']
     
     return(
         
@@ -33,9 +36,13 @@ export default function Block()
                 <Box sx={styles.content}><b>Competition of productivity framework design on or before July 7th,2021.</b></Box>
                 
             <Box sx={styles.boxes}>
-                <Box component="button" sx={styles.butto}><b>5157-Feature</b></Box>
-                <Box component="button" sx={styles.butto}><b>Goal</b></Box>   
-                <Box component="button" sx={styles.butto}><b>#Colabo</b></Box>
+                {
+                    features.map( ( content , index  ) => [
+
+                        <Box  key={index} sx={styles.butto} >{content}</Box>
+
+                    ] )
+                }
             </Box>
 
             <Box sx={styles.boxes}>
@@ -43,15 +50,25 @@ export default function Block()
                 <Targeticon sx={styles.icons1}/>
                 <Noteicon sx={styles.icons1}/>
                 <Flowicon sx={styles.icons1}/> 
-                <Box sx={styles.icons2}><Personicon/><b style={{color : 'black',marginLeft:'2px'}}>4</b></Box>
+                <Grid><CircularProgress variant='determinate' value={35} color='success' size={'1.5rem'} sx={styles.circle}/></Grid>
+                <Typography sx={styles.icons1}>35%</Typography>
+                <Badge variant='dot' color='error' sx={styles.icons2}><Personicon/><b style={{color : 'black',marginLeft:'2px'}}>4</b></Badge>    
                 {/* <Box sx={styles.dot}><Doticon/></Box> */}
-                <Box sx={styles.icons3}><b>Pending</b><Downicon/></Box>
+
+                    <NativeSelect defaultValue='Pending' sx={styles.icons3}>
+
+                      <option value='pending'>Pending</option>
+                      <option value='completed'>Completed</option>
+
+                    </NativeSelect>
+        
+
             </Box>
 
             <Box sx={styles.divider}><Divider/></Box>
 
-            <Box sx={styles.boxes}>
-            <AvatarGroup max={3} sx={styles.footer1}>
+            <Box sx={styles.boxes} >
+            <AvatarGroup max={3} sx={styles.footer1} >
                 <Avatar alt="Remy Sharp" src={avatar1} />
                 <Avatar alt="Travis Howard" src={avatar2} />
                 <Avatar alt="Cindy Baker" src={avatar3} />

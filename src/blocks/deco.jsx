@@ -5,7 +5,6 @@ const styles = {
     body: 
     {
         fontFamily: "Poppins, sans-serif",
-        position:'relative'
     },
     
     cards: 
@@ -15,7 +14,8 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         marginTop : '50px',
-        marginLeft : '120px'
+        marginLeft : '120px',
+        position:'relative'
         
         
     },
@@ -24,13 +24,13 @@ const styles = {
     {
         
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "row",   
         
     },
     
     label :
     {
-        padding : '4px 15px',
+        padding : '4px 20px',
         background: '#27AE61',
         borderRadius: '7px',
         border : 'none',
@@ -38,7 +38,8 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-    
+        position : 'absolute',
+        
     },
     
     risk :
@@ -52,7 +53,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '10px',
+        marginLeft : '80px'
         
     },
 
@@ -100,7 +101,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '11px'
+        marginLeft : '15px'
         
     },
     
@@ -116,7 +117,7 @@ const styles = {
         marginBottom : '17px',
         textAlign : 'center',
         border : '2px solid #E74C3C90', 
-        marginLeft : '11px'
+        marginLeft : '10px'
         
     },
     
@@ -125,7 +126,7 @@ const styles = {
         
         color : '#8D8D8D',
         marginTop : '13px',
-        marginLeft : '33px'
+        marginLeft : '35px'
         
     },
     
@@ -135,7 +136,7 @@ const styles = {
         
         color : '#F39C12',
         marginTop : '13px',
-        marginLeft : '5px'
+        marginLeft : '10px'
         
     },
     
@@ -153,6 +154,7 @@ const styles = {
         
         padding : '10px 2px',
         fontSize : '18px',
+        size : '1rem'
         
     },
     
@@ -161,13 +163,13 @@ const styles = {
         
         marginTop : '5px',
         color : '#535353',
-        bcackgroundColor : '#C6C6C63D',
         borderRadius : '5px',
-        border : 'none',
         padding : '66px 20px',
         fontSize : '13px',
+        fontWeight : '1000',
         padding : '10px',
-        marginLeft : '4.3px'
+        marginLeft : '4.3px',
+        backgroundColor : '#C6C6C63D'
         
     },
     
@@ -176,8 +178,17 @@ const styles = {
         
         marginTop : '23px',
         marginLeft : '10px',
-        color : '#8D8D8D'
+        color : '#8D8D8D',
+        fontWeight : '500',
         
+    },
+
+    circle:
+    {
+
+        marginTop:'25px',
+        marginLeft : '5px',
+
     },
 
     icons2:
@@ -187,14 +198,14 @@ const styles = {
         color : '#8D8D8D',
         marginTop : '15px',
         marginBottom : '15px',
-        marginLeft : '20%',
+        marginLeft : '17%',
         display:'flex',
         alignItems : 'center',
         justifyContent : 'center',
         border : '2px solid #E4EAEE',
         borderRadius: '9px',
         '& .MuiBadge-dot' : {
-            padding : '6px',
+            padding : '4px',
         }
         
     },
@@ -213,15 +224,14 @@ const styles = {
     icons3:
     {
         
-        padding : '5px',
-        display : 'flex',
-        alignItems : 'center',
-        justifyContent : 'center',
+        padding : '4px',
         marginTop : '15px',
         marginBottom : '15px',
         marginLeft : '10px',
         border : '2px solid #E4EAEE',
+        color : 'black',
         borderRadius: '5px',
+        fontWeight : '500'
 
     },
     
@@ -254,7 +264,7 @@ const styles = {
     footer3:
     {
         width : '2%',
-        marginLeft : '60px', 
+        marginLeft : '70px', 
         marginTop : '20px',
         
     },
