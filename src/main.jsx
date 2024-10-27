@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
     <TopBar/>
   <Lapview />
     <Grid container>
-      <Grid item lg={4.3}>
+      <Grid item lg={4.4}>
         <Block/>
       </Grid>
       </Grid>
