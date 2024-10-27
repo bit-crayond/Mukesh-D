@@ -1,23 +1,21 @@
-import { Title } from "@mui/icons-material"
-import { borderRadius, display, fontSize, height, margin, padding, width } from "@mui/system"
-
+import { Height } from "@mui/icons-material"
 
 const styles = {
 
     body: 
     {
-        fontFamily: "'Poppins', sans-serif"
+        fontFamily: "Poppins, sans-serif",
     },
     
     cards: 
     {
         padding: "12px ",
         borderRadius: "12px",
-        border: "2px solid #E4EAEE",
         display: "flex",
         flexDirection: "column",
         marginTop : '50px',
-        marginLeft : '120px'
+        marginLeft : '120px',
+        position:'relative'
         
         
     },
@@ -26,13 +24,13 @@ const styles = {
     {
         
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "row",   
         
     },
     
     label :
     {
-        padding : '4px 15px',
+        padding : '4px 20px',
         background: '#27AE61',
         borderRadius: '7px',
         border : 'none',
@@ -40,7 +38,8 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-    
+        position : 'absolute',
+        
     },
     
     risk :
@@ -54,7 +53,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '10px',
+        marginLeft : '80px'
         
     },
 
@@ -85,15 +84,15 @@ const styles = {
     {
         
         color : '#535353',
-        fontSize : '13px',
-        marginTop : '20px',
+        fontSize : '15px',
+        marginTop : '20px'
         
     },
     
     redflag :
     {
         
-        padding : '1px',
+        padding : '5px',
         marginTop : '10px',
         marginBottom : '15px',
         color : '#E74C3C',
@@ -102,7 +101,7 @@ const styles = {
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',
-        marginLeft : '11px'
+        marginLeft : '15px'
         
     },
     
@@ -116,9 +115,9 @@ const styles = {
         padding : '5px',
         marginTop  : '10px',
         marginBottom : '17px',
-        marginLeft : '15px',
         textAlign : 'center',
         border : '2px solid #E74C3C90', 
+        marginLeft : '10px'
         
     },
     
@@ -127,7 +126,7 @@ const styles = {
         
         color : '#8D8D8D',
         marginTop : '13px',
-        marginLeft : '45px'
+        marginLeft : '35px'
         
     },
     
@@ -137,7 +136,7 @@ const styles = {
         
         color : '#F39C12',
         marginTop : '13px',
-        marginLeft : '4px'
+        marginLeft : '10px'
         
     },
     
@@ -146,7 +145,7 @@ const styles = {
         
         color : '#8D8D8D',
         marginTop : '14px',
-        marginLeft : '4px'
+        marginLeft : '5px'
         
     },
     
@@ -155,6 +154,7 @@ const styles = {
         
         padding : '10px 2px',
         fontSize : '18px',
+        size : '1rem'
         
     },
     
@@ -163,35 +163,42 @@ const styles = {
         
         marginTop : '5px',
         color : '#535353',
-        bcackgroundColor : '#C6C6C63D',
         borderRadius : '5px',
-        border : 'none',
         padding : '66px 20px',
         fontSize : '13px',
+        fontWeight : '1000',
         padding : '10px',
-        marginLeft : '4.3px'
+        marginLeft : '4.3px',
+        backgroundColor : '#C6C6C63D'
         
     },
     
     icons1:
     {
         
+        marginTop : '23px',
+        marginLeft : '10px',
         color : '#8D8D8D',
-        display : 'flex',
-        alignItems : 'center',
-        justifyContent : 'center',
-        padding : '3px'
+        fontWeight : '500',
         
+    },
+
+    circle:
+    {
+
+        marginTop:'25px',
+        marginLeft : '5px',
+
     },
 
     icons2:
     {
         
-        paddingRight : '17px',
+        paddingRight : '13px',
         color : '#8D8D8D',
         marginTop : '15px',
         marginBottom : '15px',
-        marginLeft : '20%',
+        marginLeft : '17%',
         display:'flex',
         alignItems : 'center',
         justifyContent : 'center',
@@ -199,33 +206,33 @@ const styles = {
         borderRadius: '9px',
         '& .MuiBadge-dot' : {
             padding : '6px',
+            borderRadius : '100%'
         }
         
     },
     
-    dot :
-    {
+    // dot :
+    // {
 
-        color :'red',
-        position :'absolute',
-        left : '26.5%',
-        top:'45%',
-        fontSize : 'small'
+    //     color :'red',
+    //     position :'absolute',
+    //     left : '26.5%',
+    //     top:'45%',
+    //     fontSize : 'small'
 
-    },
+    // },
         
     icons3:
     {
         
-        padding : '5px',
-        display : 'flex',
-        alignItems : 'center',
-        justifyContent : 'center',
+        padding : '4px',
         marginTop : '15px',
         marginBottom : '15px',
         marginLeft : '10px',
         border : '2px solid #E4EAEE',
+        color : 'black',
         borderRadius: '5px',
+        fontWeight : '500'
 
     },
     
@@ -238,7 +245,7 @@ const styles = {
 
     footer1:
     {
-        marginTop : '15px'
+        marginTop : '10px'
 
     },
 
@@ -258,20 +265,20 @@ const styles = {
     footer3:
     {
         width : '2%',
-        marginLeft : '18%', 
-        marginTop : '18px',
-
+        marginLeft : '70px', 
+        marginTop : '20px',
+        
     },
     
     footer4:
     {
-    
+        
         padding : '5px',
         color : '#00B7A8',
         border : '2px dotted #00B7A8',
         borderRadius : '100%',
-        marginLeft : '65px',
         marginTop : '10px',
+        marginLeft : '65px', 
         display : 'flex',
         alignItems : 'center',
         justifyContent : 'center',

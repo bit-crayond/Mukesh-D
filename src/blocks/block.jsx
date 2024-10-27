@@ -1,18 +1,20 @@
 import styles from './deco';
-import{ErrorIcon,Box,Badge,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon} from './import'
-import profiles from './images/profiles.png'
-import target from './images/target.png'
-import clipboard from './images/clipboard.png'
-import flow from './images/flow.png'
-import percentage from './images/percentage.png'
+import{ErrorIcon,Box,Badge,Card,TourIcon,InfoIcon,StarIcon,MoreVertIcon,Targeticon,Noteicon,Flowicon,Dataicon,Personicon,Divider,Avatar,AvatarGroup,Timericon,Convoicon,Downicon,Doticon, CircularProgress,Typography} from './import'
+import flagicon from './images/flagicon.png'
+import avatar1 from './images/avatar1.jpg'
+import avatar2 from './images/avatar2.jpeg'
+import avatar3 from './images/avatar3.jpeg'
+import { FormControl, Grid, InputLabel, NativeSelect } from '@mui/material';
 
 export default function Block()
 {
 
+    const features = ['5157-Feature' , 'Goal' , '#Colabo']
+    
     return(
         
-<Box sx={styles.body}>
-        <Box sx={styles.cards}>
+        <Box sx={styles.body}>
+        <Card sx={styles.cards}>
 
             <Box sx={styles.boxes}>
                 <Box component="button" sx={styles.label}>Label</Box>
@@ -24,40 +26,60 @@ export default function Block()
 
             <Box sx={styles.boxes}>
                     <Box sx={styles.calendar}><b>Jun 29,2021 . 8:00 PM</b></Box>
-                    <Box sx={styles.redflag} title = "Critical"><TourIcon /></Box>
+                    <Box sx={styles.redflag} title = "Critical"><img src={flagicon}/></Box>
                     <Box sx={styles.overdue}><b>Overdue</b></Box>
-                    <Box sx={styles.infoicon}><InfoIcon/></Box>
-                    <Box sx={styles.staricon}><StarIcon/></Box>
-                    <Box sx={styles.verticon}><MoreVertIcon/></Box>
+                    <InfoIcon sx={styles.infoicon}/>
+                    <StarIcon sx={styles.staricon}/>
+                    <MoreVertIcon sx={styles.verticon}/>
             </Box>
 
                 <Box sx={styles.content}><b>Competition of productivity framework design on or before July 7th,2021.</b></Box>
                 
             <Box sx={styles.boxes}>
-                <Box component="button" sx={styles.butto}><b>5157-Feature</b></Box>
-                <Box component="button" sx={styles.butto}><b>Goal</b></Box>   
-                <Box component="button" sx={styles.butto}><b>#Colabo</b></Box>
+                {
+                    features.map( ( content , index  ) => [
+
+                        <Box  key={index} sx={styles.butto} >{content}</Box>
+
+                    ] )
+                }
             </Box>
 
             <Box sx={styles.boxes}>
-                <Box sx={styles.icons1} title='Goals(2)'><img src={target}/></Box>
-                <Box sx={styles.icons1} title='Tasks(2)'><img src={clipboard}/></Box>   
-                <Box sx={styles.icons1} title='Workflow'><img src={flow}/></Box>
-                <Box sx={styles.icons1}><img src={percentage}/></Box>
+                
+                <Targeticon sx={styles.icons1}/>
+                <Noteicon sx={styles.icons1}/>
+                <Flowicon sx={styles.icons1}/> 
+                <Grid><CircularProgress variant='determinate' value={35} color='success' size={'1.5rem'} sx={styles.circle}/></Grid>
+                <Typography sx={styles.icons1}>35%</Typography>
                 <Badge variant='dot' color='error' sx={styles.icons2}><Personicon/><b style={{color : 'black',marginLeft:'2px'}}>4</b></Badge>    
-                <Box sx={styles.icons3}><b>Pending</b><Downicon/></Box>
+                {/* <Box sx={styles.dot}><Doticon/></Box> */}
+
+                    <NativeSelect defaultValue='Pending' sx={styles.icons3}>
+
+                      <option value='pending'>Pending</option>
+                      <option value='completed'>Completed</option>
+
+                    </NativeSelect>
+        
+
             </Box>
 
             <Box sx={styles.divider}><Divider/></Box>
 
-            <Box sx={styles.boxes}>
-                <Box sx={styles.footer1}><img src={profiles}/></Box>
+            <Box sx={styles.boxes} >
+            <AvatarGroup max={3} sx={styles.footer1} >
+                <Avatar alt="Remy Sharp" src={avatar1} />
+                <Avatar alt="Travis Howard" src={avatar2} />
+                <Avatar alt="Cindy Baker" src={avatar3} />
+                <Avatar alt="Agnes Walker"/>
+            </AvatarGroup>
                 <Box sx={styles.footer2}><Timericon/><b>Est. 2h 30 m</b></Box>
                 <Box sx={styles.footer3}><b style={{color : '#535353' }}>Discuss</b></Box>
                 <Box sx={styles.footer4}><Convoicon/></Box>
             </Box>
 
-        </Box>
+        </Card>
         </Box>
 
     )
